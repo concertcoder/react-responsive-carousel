@@ -1,6 +1,7 @@
 %arrows {
     @include transition(all, 0.25s, ease-in);
     @include opacity(0.4);
+    @include enhanceAnimations();
     position: absolute;
     z-index: 2;
     top: 20px;
@@ -231,6 +232,7 @@
     }
 
     .control-dots {
+        @include enhanceAnimations();
         position: absolute;
         bottom: 0;
         margin: 10px 0;
